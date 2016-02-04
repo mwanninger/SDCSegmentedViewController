@@ -231,7 +231,7 @@
 		[self stopObservingViewController:oldViewController];
 	}
 	
-	viewController.view.frame = self.view.frame;
+	viewController.view.frame = CGRectMake(0,0,self.view.frame.size.width,self.view.frame.size.height);
 	[self adjustScrollViewInsets:viewController];
 }
 
